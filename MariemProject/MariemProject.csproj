@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20210301162107_testMigration.cs" />
+    <Compile Remove="Migrations\20210301162107_testMigration.Designer.cs" />
+    <Compile Remove="Migrations\20210301163016_update_entity.cs" />
+    <Compile Remove="Migrations\20210301163016_update_entity.Designer.cs" />
+    <Compile Remove="Migrations\20210302163718_updateDD.cs" />
+    <Compile Remove="Migrations\20210302163718_updateDD.Designer.cs" />
+    <Compile Remove="Migrations\20210302163744_updateDD.cs" />
+    <Compile Remove="Migrations\20210302163744_updateDD.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Extensions\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.12">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.0.5" />
+  </ItemGroup>
+
+
+</Project>
